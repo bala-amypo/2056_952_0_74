@@ -11,6 +11,7 @@ public class Student {
     private String name;
     private String dept;
     private LocalDate dob;
+    private float cgpa;
     private Long getId(){
         return id;
     }
@@ -38,7 +39,7 @@ public class Student {
     private float getCgpa(){
         return cgpa;
     }
-    public void setcgpa(float cgpa){
+    public void setCgpa(float cgpa){
         this.cgpa=cgpa;
     }
     public Student(){
