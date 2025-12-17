@@ -16,25 +16,25 @@ public class Student {
     private Long getName(){
         return id;
     }
-    public void setName(Long name){
+    public void setName(String name){
         this.name=name;
     }
     private Long getDept(){
         return dept;
     }
-    public void setDept(Long dept){
+    public void setDept(String dept){
         this.dept=dept;
     }
     private Long getDob(){
         return dob;
     }
-    public void setDob(Long dob){
+    public void setDob(LocalDate dob){
         this.dob=dob;
     }
     private Long getCgpa(){
         return cgpa;
     }
-    public void setcgpa(Long cgpa){
+    public void setcgpa(float cgpa){
         this.cgpa=cgpa;
     }
 }
