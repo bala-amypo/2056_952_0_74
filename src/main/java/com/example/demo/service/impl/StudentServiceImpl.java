@@ -18,7 +18,7 @@ public class StudentServiceImpl implements StudentService {
         return stdrepo.findAll();
     }
     @Override
-    public Student getById(Long id){
-        stdrepo.findById(id);
+    public Optional Student getById(Long id){
+       return stdrepo.findById(id);
     }
 }
