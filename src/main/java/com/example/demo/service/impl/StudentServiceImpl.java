@@ -26,12 +26,12 @@ public class StudentServiceImpl implements StudentService {
     public String  updateData(Long id,Student st){
         boolean status=stdrepo.existsById(id);
         if(status){
-            st.setId(Id);
+            st.setId(id);
             stdrepo.save(st);
             return"Student updated successfully";
         }
         else{
-            return"Student with ID "+id+ 
+            return"Student with ID "+id+" not found"; 
         }
     }
 }
